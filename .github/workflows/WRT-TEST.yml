@@ -2,7 +2,7 @@
 # Copyright (C) 2026 VIKINGYFY
 
 #CI项目
-name: WRT-Arthur
+name: WRT-TEST
 
 #CI计划
 on:
@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       CONFIG:
-        default: 'Arthur'
+        default: 'TEST'
         required: true
         type: choice
         options:
@@ -25,7 +25,7 @@ on:
           - MEDIATEK-WIFI-NO
           - ROCKCHIP
           - X86
-          - Arthur
+          - TEST
       SOURCE:
         default: 'VIKINGYFY/immortalwrt'
         required: true
@@ -42,7 +42,7 @@ on:
       PACKAGE:
         required: false
         type: string
-      Arthur:
+      TEST:
         description: '仅输出配置文件，不编译固件。'
         default: 'true'
         required: true
@@ -81,4 +81,4 @@ jobs:
       #插件调整
       WRT_PACKAGE: ${{inputs.PACKAGE}}
       #仅输出配置文件
-      WRT_Arthur: ${{inputs.Arthur}}
+      WRT_TEST: ${{inputs.TEST}}
