@@ -6,6 +6,9 @@ name: WRT-Arthur
 
 #CI计划
 on:
+  #每周一早上8点
+  schedule:
+    - cron: 0 0 * * 1
   #手动编译
   workflow_dispatch:
     inputs:
@@ -41,7 +44,7 @@ on:
         type: string
       Arthur:
         description: '仅输出配置文件，不编译固件。'
-        default: 'true'
+        default: true
         required: true
         type: boolean
 
