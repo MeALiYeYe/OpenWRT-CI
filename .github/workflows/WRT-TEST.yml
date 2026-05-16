@@ -26,7 +26,6 @@ on:
           - ROCKCHIP
           - X86
           - TEST
-          - MI3G
       SOURCE:
         default: 'VIKINGYFY/immortalwrt'
         required: true
