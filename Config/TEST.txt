@@ -1,4 +1,3 @@
-#test for 京东云亚瑟
 #设备平台
 CONFIG_TARGET_qualcommax=y
 CONFIG_TARGET_qualcommax_ipq60xx=y
