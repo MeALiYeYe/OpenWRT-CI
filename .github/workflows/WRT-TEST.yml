@@ -6,6 +6,9 @@ name: WRT-TEST
 
 #CI计划
 on:
+  #周一早上8点
+  schedule:
+    - cron: 0 0 * * 1
   #手动编译
   workflow_dispatch:
     inputs:
